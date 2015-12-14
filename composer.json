@@ -1,8 +1,8 @@
 {
-    "name": "Trsteel/ckeditor-bundle",
+    "name": "meniam/ckeditor-bundle",
     "type": "symfony-bundle",
     "description": "Symfony2 bundle for easy integration of the CKEditor WYSIWYG",
-    "keywords": ["ckeditor", "wysiwyg", "editor"],
+    "keywords": ["ckeditor", "wysiwyg", "editor", "symfony3", "symfony", "bundle"],
     "license": "MIT",
     "authors": [
         {
@@ -24,7 +24,7 @@
     "autoload": {
         "psr-0": { "Trsteel\\CkeditorBundle": "" }
     },
-    "target-dir": "Trsteel/CkeditorBundle",
+    "target-dir": "meniam/CkeditorBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "1.6.x-dev"
