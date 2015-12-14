@@ -24,7 +24,6 @@
     "autoload": {
         "psr-0": { "Trsteel\\CkeditorBundle": "" }
     },
-    "target-dir": "meniam/CkeditorBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "1.6.x-dev"
