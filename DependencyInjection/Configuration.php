@@ -17,8 +17,14 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('trsteel_ckeditor');
+        $treeBuilder = new TreeBuilder('trsteel_ckeditor');
+
+        if (method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            // BC layer for symfony/config 4.1 and older
+            $rootNode = $treeBuilder->root('trsteel_ckeditor');
+        }
 
         $rootNode
             ->children()
